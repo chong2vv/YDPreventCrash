@@ -6,37 +6,23 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'YDPreventCrash'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of YDPreventCrash.'
+Pod::Spec.new do |spec|
+  spec.name         = "YDPreventCrash"
+  spec.version      = "0.1.0"
+  spec.summary      = "防崩溃、性能检测等"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.homepage     = "https://github.com/chong2vv/YDAvoidCrashKit"
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  spec.license      = "MIT"
 
-  s.homepage         = 'https://github.com/chong2vv/YDPreventCrash'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chong2vv' => 'chong2vv@gmail.com' }
-  s.source           = { :git => 'https://github.com/chong2vv/YDPreventCrash.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  spec.author             = { "王远东" => "chong2vv@gmail.com" }
 
-  s.ios.deployment_target = '10.0'
+  spec.source       = { :git => "https://github.com/chong2vv/YDPreventCrash.git", :tag => "#{spec.version}" }
+  spec.ios.deployment_target = '10.0'
+  spec.source_files = 'YDPreventCrash/Classes/**/*'
 
-  s.source_files = 'YDPreventCrash/Classes/**/*'
+  spec.static_framework = true
+  spec.requires_arc = true
+  spec.frameworks = "Foundation", "UIKit"
   
-  # s.resource_bundles = {
-  #   'YDPreventCrash' => ['YDPreventCrash/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

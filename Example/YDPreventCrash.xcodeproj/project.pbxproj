@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,9 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		774967CC8ED2672B2F46FCA4 /* Pods_YDPreventCrash_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55358DCC1BCBC0CE849BF731 /* Pods_YDPreventCrash_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BDDE5E9243ECCCC9BBEE1568 /* Pods_YDPreventCrash_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAF50BA6402AABB0B0902C4 /* Pods_YDPreventCrash_Example.framework */; };
+		A0F62D61B091DB10F595ECB5 /* libPods-YDPreventCrash_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F17DE30454D4BDC260E2BF /* libPods-YDPreventCrash_Tests.a */; };
+		B0AD5ECB4A78A9185C48EDAB /* libPods-YDPreventCrash-YDPreventCrash_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9690D57B449CCD3AAD9F5FC6 /* libPods-YDPreventCrash-YDPreventCrash_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C0911745FFCE7D7CDC5CAAA /* YDPreventCrash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YDPreventCrash.podspec; path = ../YDPreventCrash.podspec; sourceTree = "<group>"; };
+		0C0911745FFCE7D7CDC5CAAA /* YDPreventCrash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDPreventCrash.podspec; path = ../YDPreventCrash.podspec; sourceTree = "<group>"; };
 		1351BB3A1543FD28D4B6BA39 /* Pods-YDPreventCrash_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4919FABB922D0598898AAE67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		55358DCC1BCBC0CE849BF731 /* Pods_YDPreventCrash_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDPreventCrash_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1506A2B12A21EFF9001B4F20 /* YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAvoidCrash.m; sourceTree = "<group>"; };
+		1506A2B22A21EFF9001B4F20 /* YDUnrecognizedSelectorSolveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUnrecognizedSelectorSolveObject.h; sourceTree = "<group>"; };
+		1506A2B42A21EFF9001B4F20 /* NSObject+YDForwarding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YDForwarding.h"; sourceTree = "<group>"; };
+		1506A2B52A21EFF9001B4F20 /* NSObject+YDAvoidCrashRunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YDAvoidCrashRunTime.h"; sourceTree = "<group>"; };
+		1506A2B62A21EFF9001B4F20 /* NSObject+YDAvoidCrashRunTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YDAvoidCrashRunTime.m"; sourceTree = "<group>"; };
+		1506A2B72A21EFF9001B4F20 /* NSObject+YDForwarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YDForwarding.m"; sourceTree = "<group>"; };
+		1506A2B92A21EFF9001B4F20 /* YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAvoidCrash.h; sourceTree = "<group>"; };
+		1506A2BB2A21EFF9001B4F20 /* NSMutableOrderedSet+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2BC2A21EFF9001B4F20 /* NSUserDefaults+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2BD2A21EFF9001B4F20 /* NSMutableData+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2BE2A21EFF9001B4F20 /* NSMutableSet+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2BF2A21EFF9001B4F20 /* NSOrderedSet+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOrderedSet+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2C02A21EFF9001B4F20 /* NSMutableArray+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2C12A21EFF9001B4F20 /* UIView+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2C22A21EFF9001B4F20 /* NSSet+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2C32A21EFF9001B4F20 /* NSAttributedString+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2C42A21EFF9001B4F20 /* NSMutableDictionary+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2C52A21EFF9001B4F20 /* NSArray+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2C62A21EFF9001B4F20 /* NSString+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2C72A21EFF9001B4F20 /* NSMutableAttributedString+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2C82A21EFF9001B4F20 /* CALayer+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2C92A21EFF9001B4F20 /* NSDictionary+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2CA2A21EFF9001B4F20 /* NSObject+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2CB2A21EFF9001B4F20 /* NSMutableData+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2CC2A21EFF9001B4F20 /* NSUserDefaults+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2CD2A21EFF9001B4F20 /* NSMutableOrderedSet+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2CE2A21EFF9001B4F20 /* UIView+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2CF2A21EFF9001B4F20 /* NSMutableArray+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2D02A21EFF9001B4F20 /* NSOrderedSet+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSet+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2D12A21EFF9001B4F20 /* NSMutableSet+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2D22A21EFF9001B4F20 /* NSMutableAttributedString+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2D32A21EFF9001B4F20 /* NSString+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2D42A21EFF9001B4F20 /* NSArray+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2D52A21EFF9001B4F20 /* NSMutableDictionary+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2D62A21EFF9001B4F20 /* NSAttributedString+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2D72A21EFF9001B4F20 /* NSSet+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2D82A21EFF9001B4F20 /* NSObject+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2D92A21EFF9001B4F20 /* NSDictionary+YDAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YDAvoidCrash.h"; sourceTree = "<group>"; };
+		1506A2DA2A21EFF9001B4F20 /* CALayer+YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YDAvoidCrash.m"; sourceTree = "<group>"; };
+		1506A2DB2A21EFF9001B4F20 /* YDUnrecognizedSelectorSolveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUnrecognizedSelectorSolveObject.m; sourceTree = "<group>"; };
+		3A8092B4F2DA1D7A1160D523 /* Pods-YDPreventCrash-YDPreventCrash_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash-YDPreventCrash_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash-YDPreventCrash_Example/Pods-YDPreventCrash-YDPreventCrash_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4919FABB922D0598898AAE67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		57BC40BCC3B587ED2DC43CC6 /* Pods-YDPreventCrash-YDPreventCrash_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash-YDPreventCrash_Example.release.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash-YDPreventCrash_Example/Pods-YDPreventCrash-YDPreventCrash_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YDPreventCrash_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDPreventCrash_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,11 +102,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7CAF50BA6402AABB0B0902C4 /* Pods_YDPreventCrash_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDPreventCrash_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D913CCBBD3632ACA17BA33A /* Pods-YDPreventCrash_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Example/Pods-YDPreventCrash_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A9C0DDFDF0ED42C3FECDD5E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9690D57B449CCD3AAD9F5FC6 /* libPods-YDPreventCrash-YDPreventCrash_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDPreventCrash-YDPreventCrash_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C0DDFDF0ED42C3FECDD5E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C45E4A8E74BDE077DA9268FE /* Pods-YDPreventCrash_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Example.release.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Example/Pods-YDPreventCrash_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C8F17DE30454D4BDC260E2BF /* libPods-YDPreventCrash_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDPreventCrash_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0267FDB459DF70DD16331F6 /* Pods-YDPreventCrash_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Tests.release.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +119,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BDDE5E9243ECCCC9BBEE1568 /* Pods_YDPreventCrash_Example.framework in Frameworks */,
+				B0AD5ECB4A78A9185C48EDAB /* libPods-YDPreventCrash-YDPreventCrash_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,16 +130,97 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				774967CC8ED2672B2F46FCA4 /* Pods_YDPreventCrash_Tests.framework in Frameworks */,
+				A0F62D61B091DB10F595ECB5 /* libPods-YDPreventCrash_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1506A2AF2A21EFF9001B4F20 /* YDPreventCrash */ = {
+			isa = PBXGroup;
+			children = (
+				1506A2B02A21EFF9001B4F20 /* Classes */,
+				1506A2DC2A21EFF9001B4F20 /* Assets */,
+			);
+			name = YDPreventCrash;
+			path = ../YDPreventCrash;
+			sourceTree = "<group>";
+		};
+		1506A2B02A21EFF9001B4F20 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1506A2B92A21EFF9001B4F20 /* YDAvoidCrash.h */,
+				1506A2B12A21EFF9001B4F20 /* YDAvoidCrash.m */,
+				1506A2B22A21EFF9001B4F20 /* YDUnrecognizedSelectorSolveObject.h */,
+				1506A2DB2A21EFF9001B4F20 /* YDUnrecognizedSelectorSolveObject.m */,
+				1506A2B32A21EFF9001B4F20 /* YDAvoidCrashUtil */,
+				1506A2BA2A21EFF9001B4F20 /* YDAvoidCrashCategory */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1506A2B32A21EFF9001B4F20 /* YDAvoidCrashUtil */ = {
+			isa = PBXGroup;
+			children = (
+				1506A2B42A21EFF9001B4F20 /* NSObject+YDForwarding.h */,
+				1506A2B52A21EFF9001B4F20 /* NSObject+YDAvoidCrashRunTime.h */,
+				1506A2B62A21EFF9001B4F20 /* NSObject+YDAvoidCrashRunTime.m */,
+				1506A2B72A21EFF9001B4F20 /* NSObject+YDForwarding.m */,
+			);
+			path = YDAvoidCrashUtil;
+			sourceTree = "<group>";
+		};
+		1506A2BA2A21EFF9001B4F20 /* YDAvoidCrashCategory */ = {
+			isa = PBXGroup;
+			children = (
+				1506A2BB2A21EFF9001B4F20 /* NSMutableOrderedSet+YDAvoidCrash.h */,
+				1506A2BC2A21EFF9001B4F20 /* NSUserDefaults+YDAvoidCrash.h */,
+				1506A2BD2A21EFF9001B4F20 /* NSMutableData+YDAvoidCrash.h */,
+				1506A2BE2A21EFF9001B4F20 /* NSMutableSet+YDAvoidCrash.h */,
+				1506A2BF2A21EFF9001B4F20 /* NSOrderedSet+YDAvoidCrash.m */,
+				1506A2C02A21EFF9001B4F20 /* NSMutableArray+YDAvoidCrash.h */,
+				1506A2C12A21EFF9001B4F20 /* UIView+YDAvoidCrash.h */,
+				1506A2C22A21EFF9001B4F20 /* NSSet+YDAvoidCrash.h */,
+				1506A2C32A21EFF9001B4F20 /* NSAttributedString+YDAvoidCrash.m */,
+				1506A2C42A21EFF9001B4F20 /* NSMutableDictionary+YDAvoidCrash.h */,
+				1506A2C52A21EFF9001B4F20 /* NSArray+YDAvoidCrash.m */,
+				1506A2C62A21EFF9001B4F20 /* NSString+YDAvoidCrash.h */,
+				1506A2C72A21EFF9001B4F20 /* NSMutableAttributedString+YDAvoidCrash.m */,
+				1506A2C82A21EFF9001B4F20 /* CALayer+YDAvoidCrash.h */,
+				1506A2C92A21EFF9001B4F20 /* NSDictionary+YDAvoidCrash.m */,
+				1506A2CA2A21EFF9001B4F20 /* NSObject+YDAvoidCrash.h */,
+				1506A2CB2A21EFF9001B4F20 /* NSMutableData+YDAvoidCrash.m */,
+				1506A2CC2A21EFF9001B4F20 /* NSUserDefaults+YDAvoidCrash.m */,
+				1506A2CD2A21EFF9001B4F20 /* NSMutableOrderedSet+YDAvoidCrash.m */,
+				1506A2CE2A21EFF9001B4F20 /* UIView+YDAvoidCrash.m */,
+				1506A2CF2A21EFF9001B4F20 /* NSMutableArray+YDAvoidCrash.m */,
+				1506A2D02A21EFF9001B4F20 /* NSOrderedSet+YDAvoidCrash.h */,
+				1506A2D12A21EFF9001B4F20 /* NSMutableSet+YDAvoidCrash.m */,
+				1506A2D22A21EFF9001B4F20 /* NSMutableAttributedString+YDAvoidCrash.h */,
+				1506A2D32A21EFF9001B4F20 /* NSString+YDAvoidCrash.m */,
+				1506A2D42A21EFF9001B4F20 /* NSArray+YDAvoidCrash.h */,
+				1506A2D52A21EFF9001B4F20 /* NSMutableDictionary+YDAvoidCrash.m */,
+				1506A2D62A21EFF9001B4F20 /* NSAttributedString+YDAvoidCrash.h */,
+				1506A2D72A21EFF9001B4F20 /* NSSet+YDAvoidCrash.m */,
+				1506A2D82A21EFF9001B4F20 /* NSObject+YDAvoidCrash.m */,
+				1506A2D92A21EFF9001B4F20 /* NSDictionary+YDAvoidCrash.h */,
+				1506A2DA2A21EFF9001B4F20 /* CALayer+YDAvoidCrash.m */,
+			);
+			path = YDAvoidCrashCategory;
+			sourceTree = "<group>";
+		};
+		1506A2DC2A21EFF9001B4F20 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1506A2AF2A21EFF9001B4F20 /* YDPreventCrash */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for YDPreventCrash */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -123,8 +246,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				7CAF50BA6402AABB0B0902C4 /* Pods_YDPreventCrash_Example.framework */,
-				55358DCC1BCBC0CE849BF731 /* Pods_YDPreventCrash_Tests.framework */,
+				C8F17DE30454D4BDC260E2BF /* libPods-YDPreventCrash_Tests.a */,
+				9690D57B449CCD3AAD9F5FC6 /* libPods-YDPreventCrash-YDPreventCrash_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,8 +315,9 @@
 				C45E4A8E74BDE077DA9268FE /* Pods-YDPreventCrash_Example.release.xcconfig */,
 				1351BB3A1543FD28D4B6BA39 /* Pods-YDPreventCrash_Tests.debug.xcconfig */,
 				E0267FDB459DF70DD16331F6 /* Pods-YDPreventCrash_Tests.release.xcconfig */,
+				3A8092B4F2DA1D7A1160D523 /* Pods-YDPreventCrash-YDPreventCrash_Example.debug.xcconfig */,
+				57BC40BCC3B587ED2DC43CC6 /* Pods-YDPreventCrash-YDPreventCrash_Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +332,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1B7230613EF1B6E787C443CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,7 +350,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				F63F6FC2FF47CA7105EB9DED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,10 +377,11 @@
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "YDPreventCrash" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,24 +419,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B7230613EF1B6E787C443CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Example/Pods-YDPreventCrash_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YDPreventCrash/YDPreventCrash.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YDPreventCrash.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Example/Pods-YDPreventCrash_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5C418FED1D83067C1D2F75C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,29 +456,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YDPreventCrash_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-YDPreventCrash-YDPreventCrash_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F63F6FC2FF47CA7105EB9DED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -468,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -510,12 +597,14 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D913CCBBD3632ACA17BA33A /* Pods-YDPreventCrash_Example.debug.xcconfig */;
+			baseConfigurationReference = 3A8092B4F2DA1D7A1160D523 /* Pods-YDPreventCrash-YDPreventCrash_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C3V5PUXTCL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YDPreventCrash/YDPreventCrash-Prefix.pch";
 				INFOPLIST_FILE = "YDPreventCrash/YDPreventCrash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,12 +615,14 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C45E4A8E74BDE077DA9268FE /* Pods-YDPreventCrash_Example.release.xcconfig */;
+			baseConfigurationReference = 57BC40BCC3B587ED2DC43CC6 /* Pods-YDPreventCrash-YDPreventCrash_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C3V5PUXTCL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YDPreventCrash/YDPreventCrash-Prefix.pch";
 				INFOPLIST_FILE = "YDPreventCrash/YDPreventCrash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

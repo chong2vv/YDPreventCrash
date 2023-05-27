@@ -1,13 +1,37 @@
-use_frameworks!
+$:.unshift __dir__
+require 'Podfile_Hook.rb'
+source 'https://github.com/CocoaPods/Specs.git'
+VERSION = '10.0'
+platform :ios, VERSION
 
-platform :ios, '10.0'
 
-target 'YDPreventCrash_Example' do
+abstract_target 'YDPreventCrash' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  use_modular_headers!
+  
+  # avoid crash
   pod 'YDPreventCrash', :path => '../'
+  
+  target 'YDPreventCrash_Example' do
 
+  end
+  
   target 'YDPreventCrash_Tests' do
     inherit! :search_paths
-
     pod 'FBSnapshotTestCase'
+  end
+  
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['CODE_SIGN_IDENTITY'] = ''
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < VERSION.to_f
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = VERSION
+      end
+    end
   end
 end

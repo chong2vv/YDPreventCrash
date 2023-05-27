@@ -7,12 +7,17 @@
 //
 
 #import "YDAppDelegate.h"
+#import <YDPreventCrash/YDAvoidCrash.h>
 
 @implementation YDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [YDAvoidCrash setAvoidCrashEnableMethodPrefixList:@[@"YD", @"NS", @"UI"]];
+    [YDAvoidCrash setupBlock:^(NSException *exception, NSString *defaultToDo, NSDictionary *info) {
+            
+    }];
+    [YDAvoidCrash becomeAllEffective];
     return YES;
 }
 
