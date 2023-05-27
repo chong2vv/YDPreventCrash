@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YDPreventCrash"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "防崩溃、性能检测等"
 
-  spec.homepage     = "https://github.com/chong2vv/YDAvoidCrashKit"
+  spec.homepage     = "https://github.com/chong2vv/YDPreventCrash"
 
   spec.license      = "MIT"
 
