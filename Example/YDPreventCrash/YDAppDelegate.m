@@ -8,6 +8,7 @@
 
 #import "YDAppDelegate.h"
 #import <YDPreventCrash/YDAvoidCrash.h>
+#import <YDLogger.h>
 
 @implementation YDAppDelegate
 

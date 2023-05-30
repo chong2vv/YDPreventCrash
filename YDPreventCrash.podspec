@@ -24,5 +24,5 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
   spec.requires_arc = true
   spec.frameworks = "Foundation", "UIKit"
-  
+  spec.dependency 'YDSafeThread', '~> 0.1.0'
 end
