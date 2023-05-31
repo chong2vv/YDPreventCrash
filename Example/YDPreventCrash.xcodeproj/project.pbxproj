@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139904A68E737856F111A017 /* Pods_YDPreventCrash_YDPreventCrash_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D39EF13F445D8B4D903A77A /* Pods_YDPreventCrash_YDPreventCrash_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A0F62D61B091DB10F595ECB5 /* libPods-YDPreventCrash_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F17DE30454D4BDC260E2BF /* libPods-YDPreventCrash_Tests.a */; };
-		B0AD5ECB4A78A9185C48EDAB /* libPods-YDPreventCrash-YDPreventCrash_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9690D57B449CCD3AAD9F5FC6 /* libPods-YDPreventCrash-YDPreventCrash_Example.a */; };
+		EC92BA1E003E4184D2BD09EE /* Pods_YDPreventCrash_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D570998AFB5FF2818DDB31DF /* Pods_YDPreventCrash_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C0911745FFCE7D7CDC5CAAA /* YDPreventCrash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDPreventCrash.podspec; path = ../YDPreventCrash.podspec; sourceTree = "<group>"; };
+		0C0911745FFCE7D7CDC5CAAA /* YDPreventCrash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDPreventCrash.podspec; path = ../YDPreventCrash.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0D39EF13F445D8B4D903A77A /* Pods_YDPreventCrash_YDPreventCrash_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDPreventCrash_YDPreventCrash_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1351BB3A1543FD28D4B6BA39 /* Pods-YDPreventCrash_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1506A2B12A21EFF9001B4F20 /* YDAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAvoidCrash.m; sourceTree = "<group>"; };
 		1506A2B22A21EFF9001B4F20 /* YDUnrecognizedSelectorSolveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUnrecognizedSelectorSolveObject.h; sourceTree = "<group>"; };
@@ -104,10 +105,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D913CCBBD3632ACA17BA33A /* Pods-YDPreventCrash_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Example/Pods-YDPreventCrash_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9690D57B449CCD3AAD9F5FC6 /* libPods-YDPreventCrash-YDPreventCrash_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDPreventCrash-YDPreventCrash_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C0DDFDF0ED42C3FECDD5E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C45E4A8E74BDE077DA9268FE /* Pods-YDPreventCrash_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Example.release.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Example/Pods-YDPreventCrash_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C8F17DE30454D4BDC260E2BF /* libPods-YDPreventCrash_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDPreventCrash_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D570998AFB5FF2818DDB31DF /* Pods_YDPreventCrash_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDPreventCrash_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0267FDB459DF70DD16331F6 /* Pods-YDPreventCrash_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDPreventCrash_Tests.release.xcconfig"; path = "Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +119,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				B0AD5ECB4A78A9185C48EDAB /* libPods-YDPreventCrash-YDPreventCrash_Example.a in Frameworks */,
+				139904A68E737856F111A017 /* Pods_YDPreventCrash_YDPreventCrash_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A0F62D61B091DB10F595ECB5 /* libPods-YDPreventCrash_Tests.a in Frameworks */,
+				EC92BA1E003E4184D2BD09EE /* Pods_YDPreventCrash_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				1506A2B02A21EFF9001B4F20 /* Classes */,
-				1506A2DC2A21EFF9001B4F20 /* Assets */,
 			);
 			name = YDPreventCrash;
 			path = ../YDPreventCrash;
@@ -210,13 +209,6 @@
 			path = YDAvoidCrashCategory;
 			sourceTree = "<group>";
 		};
-		1506A2DC2A21EFF9001B4F20 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -246,8 +238,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				C8F17DE30454D4BDC260E2BF /* libPods-YDPreventCrash_Tests.a */,
-				9690D57B449CCD3AAD9F5FC6 /* libPods-YDPreventCrash-YDPreventCrash_Example.a */,
+				0D39EF13F445D8B4D903A77A /* Pods_YDPreventCrash_YDPreventCrash_Example.framework */,
+				D570998AFB5FF2818DDB31DF /* Pods_YDPreventCrash_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,6 +342,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				D98F290A8A81E8B33E05C9F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -461,6 +454,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98F290A8A81E8B33E05C9F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDPreventCrash_Tests/Pods-YDPreventCrash_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -600,7 +610,9 @@
 			baseConfigurationReference = 3A8092B4F2DA1D7A1160D523 /* Pods-YDPreventCrash-YDPreventCrash_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YDPreventCrash/YDPreventCrash-Prefix.pch";
 				INFOPLIST_FILE = "YDPreventCrash/YDPreventCrash-Info.plist";
@@ -618,7 +630,9 @@
 			baseConfigurationReference = 57BC40BCC3B587ED2DC43CC6 /* Pods-YDPreventCrash-YDPreventCrash_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YDPreventCrash/YDPreventCrash-Prefix.pch";
 				INFOPLIST_FILE = "YDPreventCrash/YDPreventCrash-Info.plist";

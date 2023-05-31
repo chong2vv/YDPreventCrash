@@ -7,15 +7,14 @@ platform :ios, VERSION
 
 abstract_target 'YDPreventCrash' do
   # Comment the next line if you don't want to use dynamic frameworks
-  # use_frameworks!
-  use_modular_headers!
+   use_frameworks!
+#  use_modular_headers!
   
   # avoid crash
   pod 'YDPreventCrash', :path => '../'
-  pod 'YDLogger'
   
   target 'YDPreventCrash_Example' do
-
+    pod 'YDLogger', '0.2.0'
   end
   
   target 'YDPreventCrash_Tests' do
@@ -33,6 +32,8 @@ post_install do |installer|
       if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < VERSION.to_f
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = VERSION
       end
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
     end
   end
 end

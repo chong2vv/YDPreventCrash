@@ -8,17 +8,26 @@
 
 #import "YDAppDelegate.h"
 #import <YDPreventCrash/YDAvoidCrash.h>
-#import <YDLogger.h>
+#import <YDLogger/YDLogger.h>
 
 @implementation YDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // 可以配合YDLogger日志库进行日志收集，方便排查问题。当然，这里如果已有日志库的话可以使用自己的日志库
+    [[YDLogService shared] startLogNeedHook:NO];
+    
+    // 设置开启的防护的文件前缀，建议可以由服务端配置
     [YDAvoidCrash setAvoidCrashEnableMethodPrefixList:@[@"YD", @"NS", @"UI"]];
-    [YDAvoidCrash setupBlock:^(NSException *exception, NSString *defaultToDo, NSDictionary *info) {
-            
-    }];
+    
+    // 开启防护
     [YDAvoidCrash becomeAllEffective];
+    
+    // 接收日志信息回调
+    [YDAvoidCrash setupBlock:^(NSException *exception, NSString *defaultToDo, NSDictionary *info) {
+        YDLogError(@"%@", info);
+    }];
     return YES;
 }
 

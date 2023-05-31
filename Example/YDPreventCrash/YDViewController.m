@@ -7,6 +7,7 @@
 //
 
 #import "YDViewController.h"
+#import <YDLogger/YDLogger.h>
 
 @interface YDViewController ()
 
@@ -19,6 +20,20 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+- (IBAction)testCrash:(id)sender {
+    NSArray *array = @[@"1", @"2"];
+    NSString *str = [array objectAtIndex:10];
+    NSLog(@"%@", str);
+}
+
+- (IBAction)viewLog:(id)sender {
+    
+    YDLogListViewController *vc = [[YDLogListViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
