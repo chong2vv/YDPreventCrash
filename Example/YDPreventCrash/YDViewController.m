@@ -8,7 +8,6 @@
 
 #import "YDViewController.h"
 #import <YDLogger/YDLogger.h>
-#import <Masonry/Masonry.h>
 
 @interface YDViewController ()<UITableViewDelegate, UITableViewDataSource>
 
