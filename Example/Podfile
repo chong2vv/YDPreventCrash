@@ -12,9 +12,10 @@ abstract_target 'YDPreventCrash' do
   
   # avoid crash
   pod 'YDPreventCrash', :path => '../'
+  pod 'YDLogger', '0.2.0'
   
   target 'YDPreventCrash_Example' do
-    pod 'YDLogger', '0.2.0'
+    
   end
   
   target 'YDPreventCrash_Tests' do
