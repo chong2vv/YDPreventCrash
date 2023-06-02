@@ -79,6 +79,10 @@ pod 'YDPreventCrash'
 
 ## 更新
 
+#### v0.2.1
+1. 修复setframe子线程设置防护不生效
+2. 优化exchangeClassMethod交换方法
+
 #### v0.2.0
 1. 完成YDPreventCrash防崩溃库。
 

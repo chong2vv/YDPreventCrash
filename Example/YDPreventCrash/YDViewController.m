@@ -36,6 +36,9 @@
             // 数组越界
             NSString *str = [array objectAtIndex:10];
         },
+        @"NSString": ^(void) {
+            NSString *str = [NSString stringWithUTF8String:nil];
+        },
         @"Dictionary": ^(void) {
             NSMutableDictionary *dic = [NSMutableDictionary new];
             NSString *value = nil;
