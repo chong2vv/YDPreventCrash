@@ -48,12 +48,11 @@
     if (signature != nil) {
         return signature;
     }
-    
-    NSException *exception = [NSException exceptionWithName:@"unrecognized selector(会有系统处理过的，部分情况可以忽略)" reason:[NSString stringWithFormat:@"[%@ %@]",[self class],NSStringFromSelector(sel)] userInfo:@{}];
-    [YDAvoidCrash noteErrorWithException:exception defaultToDo:@"动态添加方法，并返回nil"];
     //可以在此加入日志信息，栈信息的获取等，方便后面分析和改进原来的代码。
     YDUnrecognizedSelectorSolveObject *unrecognizedSelectorSolveObject = [YDUnrecognizedSelectorSolveObject sharedInstance];
     if ([YDUnrecognizedSelectorSolveObject resolveInstanceMethod:sel]) {
+        NSException *exception = [NSException exceptionWithName:@"unrecognized selector(会有系统处理过的，部分情况可以忽略)" reason:[NSString stringWithFormat:@"[%@ %@]",[self class],NSStringFromSelector(sel)] userInfo:@{}];
+        [YDAvoidCrash noteErrorWithException:exception defaultToDo:@"动态添加方法，并返回nil"];
         return [unrecognizedSelectorSolveObject newMethodSignatureForSelector:sel];
     } else {
         return signature;
