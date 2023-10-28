@@ -27,8 +27,7 @@
 + (BOOL) resolveInstanceMethod:(SEL)selector {
     
     //向类中动态的添加方法，第三个参数为函数指针，指向待添加的方法。最后一个参数表示待添加方法的“类型编码”
-    class_addMethod([self class], selector,(IMP)autoAddMethod,"v@:@");
-    return YES;
+    return class_addMethod([self class], selector,(IMP)autoAddMethod,"v@:@");
 }
 
 

@@ -53,8 +53,11 @@
     [YDAvoidCrash noteErrorWithException:exception defaultToDo:@"动态添加方法，并返回nil"];
     //可以在此加入日志信息，栈信息的获取等，方便后面分析和改进原来的代码。
     YDUnrecognizedSelectorSolveObject *unrecognizedSelectorSolveObject = [YDUnrecognizedSelectorSolveObject sharedInstance];
-    [YDUnrecognizedSelectorSolveObject resolveInstanceMethod:sel];
-    return [unrecognizedSelectorSolveObject newMethodSignatureForSelector:sel];
+    if ([YDUnrecognizedSelectorSolveObject resolveInstanceMethod:sel]) {
+        return [unrecognizedSelectorSolveObject newMethodSignatureForSelector:sel];
+    } else {
+        return signature;
+    }
 }
 
 
@@ -70,9 +73,10 @@
         return;
     }
     YDUnrecognizedSelectorSolveObject *unrecognizedSelectorSolveObject = [YDUnrecognizedSelectorSolveObject sharedInstance];
-    [YDUnrecognizedSelectorSolveObject resolveInstanceMethod:anInvocation.selector];
-    if([self methodSignatureForSelector:anInvocation.selector]){
-        [anInvocation invokeWithTarget:unrecognizedSelectorSolveObject];
+    if ([YDUnrecognizedSelectorSolveObject resolveInstanceMethod:anInvocation.selector]) {
+        if([self methodSignatureForSelector:anInvocation.selector]){
+            [anInvocation invokeWithTarget:unrecognizedSelectorSolveObject];
+        }
     }
 }
 
