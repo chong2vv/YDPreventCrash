@@ -21,7 +21,7 @@
         //replaceCharactersInRange
         [NSObject exchangeInstanceMethod:[self class] method1Sel:@selector(setFrame:) method2Sel:@selector(avoidCrashSetFrame:)];
         [NSObject exchangeInstanceMethod:[self class] method1Sel:@selector(setBounds:) method2Sel:@selector(avoidCrashSetBounds:)];
-        [NSObject exchangeInstanceMethod:[self class] method1Sel:@selector(removeFromSuperview) method2Sel:@selector(avoidRemoveFromSuperview)];
+//        [NSObject exchangeInstanceMethod:[self class] method1Sel:@selector(removeFromSuperview) method2Sel:@selector(avoidRemoveFromSuperview)];
         
         [NSObject exchangeInstanceMethod:[self class] method1Sel:@selector(setNeedsLayout) method2Sel:@selector(avoidSetNeedsLayout)];
         [NSObject exchangeInstanceMethod:[self class] method1Sel:@selector(layoutIfNeeded) method2Sel:@selector(avoidLayoutIfNeeded)];

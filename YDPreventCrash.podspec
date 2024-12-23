@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YDPreventCrash"
-  spec.version      = "0.2.2"
+  spec.version      = "0.2.3"
   spec.summary      = "防崩溃、性能检测等"
 
   spec.homepage     = "https://github.com/chong2vv/YDPreventCrash"
